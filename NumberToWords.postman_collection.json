@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "e0a5bb2e-e91f-4fa1-884d-41c47b6c5e6c",
+		"name": "NumberToWords",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20609685"
+	},
+	"item": [
+		{
+			"name": "Verify API response for a valid single-digit number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify API response for a valid double-digit number",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Verify API response for a valid Three-digit number Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Verify API response for a valid number in Thousands",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "valid number in Millions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "valid number in Billions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "valid Maximum supported number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Response for Zero",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Response for  negative numbers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Response for  non-numeric input",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Response for  large number exceeding limit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Response for  large number exceeding limit Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://www.dataaccess.com/webservicesserver/NumberToWords\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "http",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"http://www.dataaccess.com/webservicesserver/NumberConversion.wso\" \\\r\n     -H \"Content-Type: text/xml; charset=utf-8\" \\\r\n     -H \"SOAPAction: \\\"http://www.dataaccess.com/webservicesserver/NumberToWords\\\"\" \\\r\n     -d '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n         <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n           <soap:Body>\r\n             <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n               <ubiNum>12345</ubiNum>\r\n             </NumberToWords>\r\n           </soap:Body>\r\n         </soap:Envelope>'\r\n"
+			},
+			"response": []
+		}
+	]
+}
